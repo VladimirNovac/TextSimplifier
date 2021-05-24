@@ -1,13 +1,8 @@
-Text Simplifier V 1.0
-#################################################################
-
+# Text Simplifier V 1.0
 This is a simple text simplifier written in java that works in console mode. 
 It allows the user to enter text that will dinamically swapped with a simpler version.
 
-
-Main Features
-#################################################################
-
+# Main Features
 - At the start of the program, users can manually enter the file names for the key words file and thesaurus. The program will then use files for parsing text.
 
 - When user writtes a line of text and hits enter, the application will immediately parse the line word per word, swap any words if a suitable replacement is found and display the line in the console.
@@ -19,10 +14,7 @@ A text loader which reads the key words file and thesaurus and loads them into m
 A text parser which reads the user input text and compares the words with the thesaurus stored in memory. Additionally, the text parser implements a print function that allows the processed text to be displayed in the console.
 This approach allows for more flexibility if additional features should be added.
 
-
-How to use
-#################################################################
-
+# How to use
 To program can be run from the jar file using the following command:
 java -Xmx1G –cp ./simplifier.jar ie.gmit.dip.Runner
 (-Xmx1G - this command allocates a minimum 1gb memory for the application)
@@ -30,10 +22,8 @@ java -Xmx1G –cp ./simplifier.jar ie.gmit.dip.Runner
 To exit the program, use the following command in the console:
 \quit
 
-Classes and methods
-#################################################################
-
-Runner Class
+# Classes and methods
+### Runner Class
 ---------------------
 Runner class that executes the program. Has methods for user interface and keyboard input.
 Methods:
@@ -41,7 +31,7 @@ main() - Starts the program.
 initUi() - Initialises the user interface and calls the start() method.
 start() - Enables keyboard input and asks the user for the location of the google words file and thesaurus. Creates a new Text Loader and Text Parser object. Starts the main program loop.
 
-Abstract Class Loader
+### Abstract Class Loader
 -----------------------
 Abstract superclass for the loader program.
 Methods:
